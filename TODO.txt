@@ -1,15 +1,11 @@
 LEARNING
->Script to run another script automatically
-	-fill a file with data like current date or time
-		-Called writer.py		
-		-Called data.txt
->Script to run writer.py at a certain time
-	-Called update.py
-	-May have to constantly run in the background
-
->Script to interact with CLI
-	-edit update.py to push data.txt to the testbed repo after
-		calling writer.py
+>Utilize crontab to automate push to git
+	-write a script to run shell commands
+		-called pusher.py
+	-will every day at midnight push latest update to github
+>pusher.py
+	-use os module to automatically add, commit, and push to git
+	-
  
 
 
